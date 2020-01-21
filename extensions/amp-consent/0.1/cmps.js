@@ -35,6 +35,12 @@ if (getMode().test || getMode().localDev) {
   };
 }
 
+CMP_CONFIG['appconsent'] = {
+  'consentInstanceId': 'appconsent',
+  'checkConsentHref': 'http://localhost:3000/api/show-consent',
+  'promptUISrc': 'http://localhost:3000/loader.html',
+};
+
 CMP_CONFIG['didomi'] = {
   'consentInstanceId': 'didomi',
   'checkConsentHref': 'https://api.privacy-center.org/amp/check-consent',
